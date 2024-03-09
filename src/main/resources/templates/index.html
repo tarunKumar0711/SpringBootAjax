@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Person Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script th:src="@{/app.js}"></script>
+    <style>
+        /* Add CSS styles here */
+        #personTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #personTable th, #personTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        #personTable th {
+            background-color: #f2f2f2;
+        }
+        #addPersonForm {
+            display: none;
+            margin-top: 20px;
+        }
+        #pageHeader{
+            text: center
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h1 id="pageHeader">Person Management</h1>
+<table id="personTable" class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Mobile Number</th>
+        <th>Email</th>
+        <th>Father's Name</th>
+        <th>PAN Number</th>
+    </tr>
+    </thead>
+    <tbody id="personTableBody">
+    </tbody>
+</table>
+
+<h2 id="addPersonHeader">Add New Person</h2>
+<form id="addPersonForm">
+    <input type="text" id="name" placeholder="Name" required/>
+    <input type="text" id="mobileNumber" placeholder="Mobile Number" required/>
+    <input type="email" id="email" placeholder="Email" required/>
+    <input type="text" id="fathersName" placeholder="Father's Name" required/>
+    <input type="text" id="panNumber" placeholder="PAN Number" required/>
+    <button type="submit">Add</button>
+</form>
+</div>
+<script>
+    $(document).ready(function() {
+        $('#addPersonHeader').click(function() {
+            $('#addPersonForm').toggle();
+        });
+    });
+</script>
+</body>
+</html>
