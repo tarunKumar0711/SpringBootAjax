@@ -33,7 +33,7 @@ To run this application locally, you'll need to have Java and Maven installed on
 - Use the "Add New Person" button to add a new person to the system.
 - Fill out the form with valid data and click the "Add" button to submit the form.
 
-## Screenshots and Video
+## Screenshots
   
 ![Screenshot 1](https://github.com/tarunKumar0711/SpringBootAjax/assets/68737903/f620eaa8-03a5-4868-9be7-d4b83e611909)
 
