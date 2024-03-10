@@ -35,10 +35,10 @@ To run this application locally, you'll need to have Java and Maven installed on
 
 ## Screenshots and Video
 
-- [Watch the Video Demo]([https://drive.google.com/your-video-link](https://drive.google.com/file/d/142mSOaI9kfi6kj6P6AosPW5FfvxnZP67/view?usp=sharing))
+- ![Watch the Video Demo]([https://drive.google.com/your-video-link](https://drive.google.com/file/d/142mSOaI9kfi6kj6P6AosPW5FfvxnZP67/view?usp=sharing))
   
-  ![Screenshot 1](https://github.com/tarunKumar0711/SpringBootAjax/assets/68737903/f620eaa8-03a5-4868-9be7-d4b83e611909)
+ - ![Screenshot 1](https://github.com/tarunKumar0711/SpringBootAjax/assets/68737903/f620eaa8-03a5-4868-9be7-d4b83e611909)
 
-  ![Screenshot 2](https://github.com/tarunKumar0711/SpringBootAjax/assets/68737903/93088370-e939-4f3f-9afb-4fc9d118d1c0)
+ - ![Screenshot 2](https://github.com/tarunKumar0711/SpringBootAjax/assets/68737903/93088370-e939-4f3f-9afb-4fc9d118d1c0)
 
   
