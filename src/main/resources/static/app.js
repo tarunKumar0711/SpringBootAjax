@@ -1,13 +1,18 @@
+function clearForm() {
+    document.getElementById('name').value = '';
+    document.getElementById('mobileNumber').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('fathersName').value = '';
+    document.getElementById('panNumber').value = '';
+}
+
 $(document).ready(function() {
-    // Function to fetch and update the table with persons data
     function fetchAndDisplayPersons() {
         $.ajax({
-            url: '/persons', // Your RESTful API endpoint to fetch persons
+            url: '/persons',
             type: 'GET',
             success: function(persons) {
-                // Clear existing table rows
                 $('#personTableBody').empty();
-                // Process retrieved data and display in HTML
                 persons.forEach(function(person) {
                     $('#personTableBody').append(
                         `<tr>
@@ -26,14 +31,12 @@ $(document).ready(function() {
         });
     }
 
-    // Initial call to fetch and display persons on page load
     fetchAndDisplayPersons();
 
-    // Handle form submission
-    $('#addPersonForm').submit(function(event) {
-        event.preventDefault(); // Prevent default form submission
 
-        // Get form data
+    $('#addPersonForm').submit(function(event) {
+        event.preventDefault();
+
         var formData = {
             name: $('#name').val(),
             mobileNumber: $('#mobileNumber').val(),
@@ -42,21 +45,19 @@ $(document).ready(function() {
             panNumber: $('#panNumber').val()
         };
 
-        // Send AJAX request to add person
+
         $.ajax({
             type: 'POST',
             url: '/add',
             contentType: 'application/json',
             data: JSON.stringify(formData),
             success: function(response) {
-                // Handle success
+
                 alert('Person added successfully!');
-                // Fetch and display updated persons data
+                clearForm();
                 fetchAndDisplayPersons();
-                // Optionally, update table or perform other actions
             },
             error: function(xhr, status, error) {
-                // Handle errors
                 alert('Error: ' + xhr.responseText);
             }
         });

@@ -1,0 +1,34 @@
+#personTable {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    border-collapse: collapse;
+}
+#personTable th, #personTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#personTable th {
+    background-color: #f2f2f2;
+}
+#addPersonForm {
+    display: none;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+h2{
+    display: inline;
+}
+#addPersonHeader {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+#addPersonHeader:hover {
+    color: #0056b3;
+}
